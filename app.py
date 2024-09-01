@@ -12,6 +12,10 @@ client = Client("SahaniJi/FLUX.1-schnell")
 def sanitize_filename(prompt):
     return re.sub(r'[^a-zA-Z0-9_\- ]', '', prompt).replace(' ', '_')
 
+@app.route("/")
+def home():
+    return "Flask is installed!"
+
 @app.route('/generate-image', methods=['POST'])
 def generate_image():
     data = request.json
