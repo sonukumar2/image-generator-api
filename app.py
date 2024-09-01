@@ -17,7 +17,7 @@ def home():
     return "Flask is installed!"
 
 @app.route('/generate-image', methods=['GET'])
-def send_message()
+def send_message():
     return "This is image"
 
 @app.route('/generate-image', methods=['POST'])
