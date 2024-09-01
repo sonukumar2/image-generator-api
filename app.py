@@ -16,6 +16,10 @@ def sanitize_filename(prompt):
 def home():
     return "Flask is installed!"
 
+@app.route('/generate-image', methods=['GET'])
+def send_message()
+    return "This is image"
+
 @app.route('/generate-image', methods=['POST'])
 def generate_image():
     data = request.json
